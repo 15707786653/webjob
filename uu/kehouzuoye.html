@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        body{ font-size: 12px;font-family: "宋体"；}
+        body,form,input,p{padding: 0;margin: 0;border: 0;}
+        form{
+            width: 320px;
+            height: 150px;
+            padding-top: 20px;
+            margin: 50px auto;
+            background: #f5f8fd;
+            border-radius: 20px;
+            border: 3px solid #4f4f4f;
+        }
+        p{
+            margin-top: 15px;
+            text-align: center;
+        }
+        p span{
+            width: 40px;
+            display: inline-block;
+            text-align: center;
+        }
+        .num,.pass{
+            width:152px;                                      
+	        height:18px;                                 
+	        border:1px solid #38a1bf;
+            padding:2px 2px 2px 22px; 
+        }
+        .num{                                         /*定义第一个文本框的背景、文本颜色*/
+	        background:url(images/1.jpg) no-repeat 5px center #FFF;
+	        color:#999;
+            }                     
+        .pass{                                        /*定义第二个文本框的背景*/                                                    
+	        background:url(images/2.jpg) no-repeat 5px center firebrick;
+            }
+        .btn1,.btn2{
+	        width:60px; 
+	        height:25px; 
+	        border-radius:3px;                        /*设置圆角边框*/ 
+	        border:1px solid #6b5d50; 
+	        margin-left:30px;
+            
+	        }
+            .btn1{ background:#3bb7ea;}                  /*设置第一个按钮的背景色*/   
+            .btn2{ background:#fb8c16;}   
+    </style>
+</head>
+<body>
+    <form action="#" method="POST">
+        <p>
+            <span>账号：</span>
+            <input type="text" name="username" class="num">
+        </p>
+        <p>
+            <span>密码：</span>
+            <input type="password" name="pwd" class="pass">
+        </p>
+        <input type="button" name="no" class="btn1" value="登录">
+        <input type="button" name="no1" class="btn2" value="注册">
+    </form>
+</body>
+</html>
