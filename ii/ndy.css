@@ -1,0 +1,55 @@
+.try{
+    width: 100%;
+    height: 312%;
+    background: red;
+    padding: 70px;
+}
+.try header{
+    width: 555px;
+    height: 95px;
+    border-radius: 48px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 7px 0 0 35px;
+    background: url(https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2848970975,2268336278&fm=26&gp=0.jpg) no-repeat;
+}
+.try p{
+    margin-top: 10px;
+    text-align: center;
+    color: aliceblue;
+}
+.try ul{
+    margin: 70px auto 0;
+    width: 960px;
+}
+.try ul li{
+    width: 291px;
+    height: 251px;
+    float: left;
+    margin-right: 4%;
+    margin-bottom: 40px;
+    position: relative;
+    -webkit-perspective: 230px;
+}
+.try ul li:last-child{
+    margin-right: 0;
+}
+.try ul li img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-backface-visibility: hidden;
+    transition: all 0.5s ease-in 0s;
+}
+.try ul li img.fan{
+    -webkit-transform:rotateX(-180deg);
+}
+.try ul li:hover img.fan{
+    -webkit-transform:rotateX(0deg);
+}
+.try ul li:hover img.zheng{
+    -webkit-transform:rotateX(180deg);
+} 
+ul li{
+    display: inline;
+}
