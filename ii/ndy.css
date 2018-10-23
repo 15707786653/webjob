@@ -53,3 +53,34 @@
 ul li{
     display: inline;
 }
+@media all and (min-width:40em){
+    /* 浮动布局 */
+    ul li{
+        width: 50%;
+        list-style-type: none;
+    }
+    /*.no-flexbox*/ ul li{
+        /* float: left; */
+        list-style-type: none;
+    }
+}
+/* 将布局调整为每行3张卡 */
+@media all and (min-width:40em) and (max-width:60em){
+    /* 清除每行2个项目的行 */
+     /*.no-flexbox*/ ul li:nth-child(2n+1){
+         clear: both;
+         list-style-type: none;
+     }
+}
+@media all and (min-width:60em){
+    /* flex and non-flex共有的 */
+    ul li{
+        width: 33.33%;
+        list-style-type: none;
+    }
+    /* 浮标：每第三项后清除 */
+     /*.no-flexbox*/  ul li:nth-child(3n+1){
+         clear: both;
+         list-style-type: none;
+     }
+}
