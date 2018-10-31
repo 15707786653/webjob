@@ -171,16 +171,19 @@ img{
 .txt-box:hover{
     height: 40px;
 }
-.txt-box li{
+.txtItem{
     width: 12.5%;
     background-color: #333;
     margin-right: 2px;
     color: #fff;
     text-align: center;
 }
-.txt-box li:hover{
+.txtItem:hover,.heighlightColor{
     background-color: rgba(252, 164, 2, 0.829);
 }
-.txt-box li:last-child{
+.txtItem:last-child{
     margin:0;
+}
+.normalColor{
+    background-color: rgba(0,0,0,0,);
 }
