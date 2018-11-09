@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: none;
+        }
+        *{margin: 0;padding: 0}
+        .box{
+            margin: 100px auto;
+            width: 600px;
+            height: auto;
+            border: 1px solid #333;
+            padding: 30px 0;
+        }
+        textarea{
+            width: 450px;
+            resize: none;
+        }
+        .box li{
+            width: 450px;
+            line-height: 30px;
+            border-bottom: 1px dashed #ccc;
+            margin-left: 80px;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var uploadBtn=document.getElementById("weiboUpload");
+            console.log(uploadBtn);
+            var newTxt=document.getElementById("newTxt");
+            console.log(newTxt);
+            var contentUl=document.createElement("ul");
+            uploadBtn.parentNode.appendChild(contentUl);
+            uploadBtn.onclick=function(){
+                var newLi=document.createElement("li");
+                if(newTxt.value==""){
+                    window.alert("发布的内容不能为空");
+                    return false;
+                }
+                newLi.innerHTML=newTxt.value;
+                var delLink=document.createElement("a");
+                delLink.href="#";
+                delLink.innerHTML="删除";
+                delLink.onclick=function(){
+                    contentUl.removeChild(this.parentNode); 
+                }
+                newLi.appendChild(delLink);
+               if(contentUl.hasChildNodes())
+                     contentUl.insertBefore(newLi,contentUl.firstChild);
+              else  contentUl.appendChild(newLi); 
+              newTxt.value="";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="box" id="WeiboArea">
+        微博发布：
+        <textarea name="" id="newTxt" cols="30" rows="10"></textarea>
+        <button id="weiboUpload">发布</button>
+        <ul></ul>
+    </div>
+</body>
+</html>

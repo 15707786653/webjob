@@ -11,7 +11,7 @@
 // img4.style.display="block";
 // img0.style.display="none";
 
-
+//初始化
 // 获取一组带超链接的图像
 var imagesA=document.getElementById("images").children;
 // console.log(imagesA);
@@ -96,3 +96,6 @@ function gotoImg(){
 }
 
 
+// sliderDiv.addEventListener('mouseover', stopChange);
+// sliderDiv.addEventListener('mouseover', function () {    window.clearInterval(timer);  });
+sliderDiv.addEventListener('mouseover', ()=>{clearInterval(timer);});
