@@ -1,0 +1,18 @@
+div.box1{
+    widows: 20px;
+    height: 30px;
+    float: left;
+    background-color: aquamarine
+}
+div.box2{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    float: right;
+}
+div.box3{
+    widows: 100px;
+    height: 100px;
+    border: 1px solid red;
+
+}

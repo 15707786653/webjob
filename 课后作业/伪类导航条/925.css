@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.nav{
+    width: 731px;
+    height: 50px;
+    border: 1px solid red;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul li{
+    float: left;
+    widows: 120px;
+    text-align: center;
+    line-height: 50px;
+}
+.nav ul li a{
+    display: block;
+   width: 120px;
+    height: 50px;
+    border: 1px solid blue;
+    text-decoration: none;
+    color:white;
+   }
+   .nav ul li a:link, .nav ul li a:visited{
+    background-color: purple;
+    border-right: 1px solid white;
+   }
+  .nav ul li a.last{
+    border-right:0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+   }
+  .nav ul li  a.first{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+   }
+    .nav ul li a:hover{
+    background-color: orange;
+   }

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>动画</title>
+	<style>
+
+		body, ul, li {
+			margin: 0;
+			padding: 0;
+			background-color: black;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		img {
+			display: block;
+		}
+
+		.view-box {
+			width: 680px;
+			height: 320px;
+			padding: 3px;
+			margin: 100px auto;
+			border: 3px solid #CCC;
+			background-color:bisque;
+			border-radius: 15px;
+		}
+
+		.view-box ul {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.view-box li {
+			position: absolute;
+			top: -325px;
+		}
+
+		.view-box li:first-child {
+			top: 0;
+		}
+
+		.view-box li:nth-child(1) {
+			animation: cycle 20s linear infinite;
+		}
+
+		.view-box li:nth-child(2) {
+			animation: cycletwo 20s linear infinite;
+		}
+
+		.view-box li:nth-child(3) {
+			animation: cyclethree 20s linear infinite;
+		}
+
+		.view-box li:nth-child(4) {
+			animation: cyclefour 20s linear infinite;
+		}
+
+		.view-box li:nth-child(5) {
+			animation: cyclefive 20s linear infinite;
+		}
+
+		@keyframes cycle {
+			0%  {top: 0px;}
+			4%  {top: 0px;}
+			16% {top: 0px; opacity: 1; z-index: 0;} 
+			20% {top: 325px; opacity: 0; z-index: 0;}
+			21% {top: -325px; opacity: 0; z-index: -1;}
+			50% {top: -325px; opacity: 0; z-index: -1;}
+			92% {top: -325px; opacity: 0; z-index: 0;}
+			96% {top: -325px; opacity: 0;}
+			100%{top: 0px; opacity: 1;}
+		}
+
+		@keyframes cycletwo {
+			0%  {top: -325px; opacity: 0;}
+			16% {top: -325px; opacity: 0;}
+			20% {top: 0px; opacity: 1;}
+			24% {top: 0px; opacity: 1;} 
+			36% {top: 0px; opacity: 1; z-index: 0;} 
+			40% {top: 325px; opacity: 0; z-index: 0;}
+			41% {top: -325px; opacity: 0; z-index: -1;}  
+			100%{top: -325px; opacity: 0; z-index: -1;}
+		}
+
+		@keyframes cyclethree {
+			0%  {top: -325px; opacity: 0;}
+			36% {top: -325px; opacity: 0;}
+			40% {top: 0px; opacity: 1;}
+			44% {top: 0px; opacity: 1;} 
+			56% {top: 0px; opacity: 1; z-index: 0;} 
+			60% {top: 325px; opacity: 0; z-index: 0;} 
+			61% {top: -325px; opacity: 0; z-index: -1;}
+			100%{top: -325px; opacity: 0; z-index: -1;} 
+		} 
+
+		@keyframes cyclefour {
+			0%  {top: -325px; opacity: 0;}
+			56% {top: -325px; opacity: 0;}
+			60% {top: 0px; opacity: 1;}
+			64% {top: 0px; opacity: 1;}
+			76% {top: 0px; opacity: 1; z-index: 0;}
+			80% {top: 325px; opacity: 0; z-index: 0;}
+			81% {top: -325px; opacity: 0; z-index: -1;}
+			100%{top: -325px; opacity: 0; z-index: -1;}
+		}
+
+		@keyframes cyclefive {
+			0%  { top:-325px; opacity:0; }
+			76% { top:-325px; opacity:0; }
+			80% { top:0px; opacity:1; }
+			84% { top:0px; opacity:1; }
+			96% { top:0px; opacity:1; z-index:0; }
+			100%{ top:325px; opacity:0; z-index:0; }
+		}
+		.content h1 {
+        font-size: 48px;
+        color: #334455;
+        text-shadow: 0px 1px 1px #f4f4f4;
+        text-align: center;
+        padding: 60px 0 30px;
+        }
+		.sds{
+			position: relative;
+			top: 0;
+			width: 680px;
+			height: 5px;
+			background:brown;
+			/* -moz-animation: fullexpand 25s ease-out infinite; */
+			-webkit-animation: fulexpand 25s ease-out infinite;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+	<h1>海贼王</h1>
+	</div>
+	<div class="view-box">
+		<ul>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539802041154&di=e75b800ee8fedb7b22ce30f1783fee98&imgtype=0&src=http%3A%2F%2Fs9.rr.itc.cn%2Fr%2FwapChange%2F20173_8_9%2Fa5u4bx9616886952424.jpg" alt="" width="680px" height="320"></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539802160321&di=2f621f7f36ad495b204fe2dabfb3947d&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20161110%2F0074e5007fb54fdb83bc3cae922b82cf_th.gif" alt="" width="680px" height="320"></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539802225825&di=a6db90a97f31287a74a68b52036ae457&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20171103%2Fd284046ef5db432283640fa1f5077eb3.gif" alt="" width="680px" height="320"></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539802326001&di=fe3ca2cd3a199377d5f4d74b7b8a633e&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20171114%2F8fa11ba826874d2d96a7d6805edc8459.gif" alt="" width="680px" height="320"></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1540397209&di=d84bd6d5edaea97d0aec439c674b2f4b&imgtype=jpg&er=1&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180417%2F208804645c5f4df5b86024bedc44e618.gif" alt="" width="680px" height="320"></li>
+		</ul>
+		<div class="sds"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+h1{
+    color:red ;
+    text-align:center;
+    font-family:"隶书";
+    font-size: 500%;
+
+    
+}
+p{
+    text-align: center;
+    color: blueviolet;
+    font-family: "行书";
+}
+body{
+    background-color:black
+}
+.wd{
+    color: brown;
+}

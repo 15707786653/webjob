@@ -1,0 +1,104 @@
+.mod{
+    position: relative;
+    z-index: 10;
+    height: 36px;
+    border-bottom: 2px solid #3983e5;
+    text-align: left;
+}
+.title{
+    font: 16px/26px "Microsoft YaHei", "SimHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+}
+.title span{
+    position: relative;
+    bottom: -3px;
+    float: left;
+    height: 36px;
+    line-height: 30px;
+    color: #333;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.title .current,
+.title span:hover{
+    color: #3983e5;
+}
+.title .current,
+ {
+    cursor: default;
+}
+.title .current i {
+    display: inline-block;
+}
+.title i {
+    position: absolute;
+    left: 50%;
+    margin-left: -6px;
+    bottom: 3px;
+    display: none;
+    border-bottom: 6px solid #3983e5;
+    border-top: 0 none;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+.label-en {
+    position: absolute;
+    top: -12px;
+    left: 33px;
+    display: inline-block;
+    background-color: orange;
+    color: #fff;
+    font-weight: normal;
+    padding: 0 2px;
+    font-size: 8px;
+    line-height: 16px;
+}
+ .trangle {
+    position: absolute;
+    z-index: 1;
+    top: 17px;
+    right: 0;
+    display: inline-block;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #da620a transparent transparent #da620a;
+}
+.entrance{
+    position: relative;
+    float: left;
+
+}
+.entrance dl{
+    margin: 0px 0 7px 0;
+    overflow: hidden;
+    position: relative
+}
+.entrance dt{
+    padding: 4px 0 0 0;
+    font: 700 14px/34px "Microsoft yahei";
+}
+.entrance dd{
+    margin-left: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    zoom: 1;
+
+}
+.entrance-item{
+    position: relative;
+    float: left;
+    display: block;
+    border-left: 1px solid #ececec;
+    padding: 0 10px;
+    line-height: 18px;
+    height: 18px;
+    margin: 7px 0;
+    font-size: 10px;
+
+}
+.a{
+    width: 200px;
+    margin-left: 20px;
+    border-right: 1px dotted black;
+}

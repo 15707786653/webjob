@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        span{
+            position: relative;
+            bottom: -50px;
+            float: left;
+            height: 36px;
+            line-height: 30px;
+            color: #333;
+            margin-right: 30px;
+            cursor: pointer;
+        }
+        .w{
+            float: left;
+            position: relative;
+            height: 36px;
+            line-height: 30px;
+            margin-right: 30px;
+        }
+        .A{
+            position: relative;
+            height: 36px;
+            line-height: 30px;
+        }
+        .B{
+            position: absolute;
+            z-index: 9;
+            right: -15px;
+            top: -15px;
+            display: inline-block;
+            padding: 0 2px;
+            height: 15px;
+            line-height: 15px;
+            background-color: #ff9913;
+            color: #fff;
+        }
+        .B em{
+            font-size: 9px;
+            font-family: 'Tahoma', arial;
+            margin: 0;
+            padding: 0;
+            vertical-align: top;
+        }
+        .C{
+            position: absolute;
+            z-index: 1;
+            top: 15px;
+            right: 0px;
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-width: 3px;
+            border-style: solid;
+            border-color: #da620a transparent transparent #da620a;
+        }
+    </style>
+</head>
+<body>
+    <span>热门<i></i></span>
+    <span>特卖汇<i></i></span>
+    <span>出境游<i></i></span>
+    <span>境内游<i></i></span>
+    <span>周边游<i></i></span>
+    <span>邮轮<i></i></span>
+    <span class="w">
+        门票
+        <i></i>
+    </span>
+    <span class="A">
+        主题游
+        <i></i>
+        <b class="B">
+            <em>NEW</em>
+            <em class="C"></em>
+        </b>
+    </span>
+    <span>高端游<i></i></span>
+</body>
+</html>
